@@ -1,7 +1,7 @@
 # curly-waffle
 this repository is for storing my personal data
 
-the commit message format is：
+the format of commit message is：
 
 descripte
 brife :add a new file named test
