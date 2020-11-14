@@ -1,0 +1,35 @@
+1.搜索软件
+sudo  apt-cache  search  package_name
+其中还可以使用正则表达式 sudo apt-cache search sof* 这样就可以搜索到源上面所有以sof开头的软件包。
+2.查看软件包信息
+sudo apt-cache show package_name
+3.查看软件包依赖关系
+sudo apt-cache show depends package_name
+4.查看每个软件包的简要信息
+sudo apt-cache dump
+5.安装软件
+sudo apt-get install  package_name
+6.更新已安装的软件包
+sudo apt-get  upgrade
+7.更新软件包列表
+sudo apt-get update
+8.卸载一个软件包但是保留相关的配置文件
+sudo apt-get remove package_name
+9.卸载一个软件包同时删除配置文件
+apt-get -purge remove package_name
+10.删除软件包的备份
+apt-get clean
+
+
+sudo apt-get update
+root@DESKTOP-M6D2HEN:/# apt update
+Hit:1 http://mirrors.aliyun.com/ubuntu bionic InRelease
+Hit:2 http://mirrors.aliyun.com/ubuntu bionic-security InRelease
+Hit:3 http://mirrors.aliyun.com/ubuntu bionic-updates InRelease
+Hit:4 http://mirrors.aliyun.com/ubuntu bionic-backports InRelease
+Hit:5 http://mirrors.aliyun.com/ubuntu bionic-proposed InRelease
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+50 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@DESKTOP-M6D2HEN:/# apt list --upgradable
